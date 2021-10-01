@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    font-family: 'Uchen', serif;
+    background-color: orange;
+    width: 100%;
+    margin: 0%;
+}
+
+.animations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.top{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.slider{
+    background-size:cover;
+    width: 1000px;
+    overflow: hidden;
+}
+
+.slide{
+    background-size: contain;
+    display:flex;
+}
+section{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+section img{
+    box-sizing: border-box;
+    border: 5px solid brown;
+}
+.servicebox{
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(236, 234, 234);
+}
+
+.servicebox1{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+.servicebox2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.servicelist{
+    background:white;
+    display: flex;
+    margin:0 1vw;
+    flex-direction: column;
+    width: 15vw;
+}
+
+.serviceimage{
+    background: url('../Images/service_image.jpg') no-repeat center top;
+    height: 15vh;
+    background-size: 16vh;
+}
+
+.servicefeature{
+    text-align: center;
+    height:10vh;
+    font-size: 30px;
+    font-weight: 600;
+    color: brown;
+}
+
+.servicedesc{
+    padding: 2vh;;
+    font-size: 16px;
+    text-align: center;
+}

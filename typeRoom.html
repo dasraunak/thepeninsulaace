@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/typeRoom.css">
+    <title>Document</title>
+</head>
+
+<body>
+  <header>
+      <div class="hname">The Peninsula Ace</div>
+      <nav>
+          <ul class="first">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/">Search</a></li>
+              <li><a href="/facilities">Facilities</a></li>
+              <li><a href="/bookings">Bookings</a></li>
+              <li>Login</li>
+              <li>Sign Up</li>
+              <!--<li><input type="text" id="fname" placeholder="search"
+                  style="width:60px ;height: 20px;background: rgb(182, 157, 157);"></li>
+              <li><button style="background: blue">Search</button></li>-->
+          </ul>
+      </nav>
+  </header>
+    <div class="container">
+        <div class="roomsdetails">
+            <div class="differentrooms">
+                <div class="image"><img src="typeRoomImages\room1.jpg" alt="" width="250" height="300"></div>
+                <div class="text">
+                    <p><b>Deluxe Rooms</b><br>
+                        <b>Price:</b>4000<br>
+                        <b>Rooms Available:</b>100<br>
+                        <b>Ratings:</b><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><br>
+                    </p>
+                </div>
+            </div>
+            <div class="differentrooms">
+                <div class="image"><img src="typeRoomImages\room2.jpg" alt="" width="250" height="300"></div>
+                <div class="text">
+                    <p><b>Super Deluxe Rooms</b><br>
+                        <b>Price:</b>15000<br>
+                        <b>Rooms Available:</b>40<br>
+                        <b>Ratings:</b><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span><br>
+                    </p>
+                </div>
+            </div>
+            <div class="differentrooms">
+                <div class="image"><img src="typeRoomImages\room3.jpg" alt="" width="250" height="300"></div>
+                <div class="text">
+                    <p><b>Murphy Rooms</b><br>
+                        <b>Price:</b>2000<br>
+                        <b>Rooms Available:</b>50<br>
+                        <b>Ratings:</b><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="customerdetails">
+            <div class="customerinfo" style="height:65vh;">
+                <h2 style="text-align: center;">Enter Your Details</h2><br>
+                <form>
+                    <label for="name">Name:<input id="name" type="text" name="name" required></label>
+                    <br><br>
+                    <label for="age">Age:<input id="age" type="number" name="age" min="0" max="120"
+                            required></label><br><br>
+                    <label for="gender">Gender:</label>
+                    <div id="radio">
+                        <label for="male"><input type="radio" id="male" name="gender" value="Male"
+                                required>Male</label><label for="female"><input type="radio" id="female" name="gender"
+                                value="Female">Female</label><label for="other"><input type="radio" id="other"
+                                name="gender" value="other">Other</label>
+                    </div><br>
+                    ID Type
+                    <div class="select-wrapper">
+                        <div class="select">
+                            <div class="select__trigger"><span>Aadhar Card</span>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="custom-options">
+                                <span class="custom-option selected" data-value="Aadhar">Aadhar Card</span>
+                                <span class="custom-option" data-value="Pan">Pan Card</span>
+                                <span class="custom-option" data-value="Driving License">Driving License</span>
+                                <span class="custom-option" data-value="Voter ID">Voted ID Card</span>
+                                <span class="custom-option" data-value="Others">Others(please specify)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                    <div class="information">Please Note that, You have to show this Id proof while checking in to the
+                        hotel<br><br></div>
+                    </p>
+                    <p>If selected others, please fill the type of ID Proof:</p>
+                    <label for="idtypeothers"><input id="idtyperothers" type="text" name="IDtypeothers"
+                            ></label>
+                    <br>
+                    <br>
+                    <label for="idnumber"> ID Proof Number:<br><input id="idnumber" type="text" name="IDtypeothers"
+                            required></label>
+                    <br>
+                    <br>
+                    <button type="submit" id="add" style="width: 70%; align-items: center;">Submit Details</button>
+                </form>
+            </div>
+            <div class="customerinfo bookinginfo">
+                <h2 style="text-align: center;">Booking Info</h2><br>
+                <form>
+                    <div class="check_in">
+                        <div for="check_in">check in:</div>
+                        <input id="date" type="date" name="true" onmousedown="set(this)" required><br>
+                    </div>
+                    <div class="check_out">
+                        <div for="check_out">check out:</div>
+                        <input id="date" type="date" name="true" onmousedown="set(this)" required><br>
+                    </div>
+                    </form>
+                    <p>Enter Number of rooms to be booked:</p>
+                    <p>Deluxe :</p>
+                    <input id="number" type="number" min="0" placeholder=0 >
+                    <p>Super Deluxe :</p>
+                    <input id="number" type="number" min="0" placeholder=0>
+                    <p>Murphy :</p>
+                    <input id="number" type="number" min="0" placeholder=0>
+                <br style="color: orange;">
+                <div id="pricing">
+                    <button type="submit" id="proceed_pay" style="width: 70%;">Proceed to pay</button><br><br>
+                    <span>Total cost: <b>0000</b></span><BR style="color: orange;">
+                    <div id="payment_methods">
+                        <p>Pay via:</p>
+                        <div><span>UPI</span>
+                            <p class="upi_img"></p>
+                        </div>
+                        <div><span>Debit card</span>
+                            <p class="card_img"></p>
+                        </div>
+                        <button type="submit" id="pay" style="width: 70%;">pay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <h2>Copyright &copy;2006, The Peninsula Ace</h2>
+            <hr style="width: 30%; margin: 5px auto;">
+            <h2>Follow us on</h2>
+              <div class="icon">
+                <a href="https://www.facebook.com"><img src="images/facebook.png" width="25" alt="fb" class="fb"></a>
+                <a href="https://www.instagram.com"><img src="images/instagram.png" width="25" alt="" class="inst"></a>
+                <a href="https://www.twitter.com"><img src="images/twitter.png" alt="" width="25" class="twt"></a>
+                <a href="https://mail.google.com"><img src="images/email.png" alt="" width="25" class="mail"></a>
+            </div>
+            <h3 style="margin-bottom:4px;">Terms & Condition</h3>
+            <h3>Privacy Policy</h3>
+            <div id="list2">
+              <div>
+                  <img class="call" src="images/phone-call.png" width="25" alt="">
+                  <a href="tel :+916204829042" class="tel"><b>+916204829042</b></a>
+              </div>
+              <div>
+              <img src="images/worldwide.png" alt="glob.png" width="25" class="glob">
+              <a href="https://www.google.com/maps/@23.8146768,86.4402328,17.83z" id="oo"><b>Dhanbad ( Jharkhand )</b></a>
+              </div>
+            </div>
+        </footer>
+        <script src="javascript/typeroom.js"></script>
+</body>
+
+</html>

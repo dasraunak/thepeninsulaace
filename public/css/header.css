@@ -1,0 +1,36 @@
+li>a{
+  text-decoration: none;
+  color:white;
+}
+
+.hname{
+   width: 49vw;
+   text-align: left;
+   padding-left: 20px;
+}
+
+header {
+  z-index: 1;
+   display: flex;
+   height: 15vh;
+   width: 100%;
+   color: white;
+   background: green;
+   background-size: 100vw 100vh;
+   /*padding: 20px;*/
+   position: sticky;
+   top: 0%;
+   justify-content: flex-end;
+   align-items: center;
+   font-size: 25px;
+}
+
+.first{
+   display: flex;
+}
+
+nav li {
+   display: inline;
+   margin: 10px;
+   padding: 4px;
+}

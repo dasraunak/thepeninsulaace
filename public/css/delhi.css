@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#bar{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: max-content;
+    position: absolute;
+    top:20px
+}
+#welcome{
+    position: relative;
+    width:100%;
+}
+#welcome>img{
+    width: 100%;
+    height: inherit;
+    margin-bottom: 0px;
+    opacity: .5px;
+}
+#welcome>h1{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top:25px;
+}
+#bar>span{
+    width: 15%;
+    text-align: center;
+    background-image: linear-gradient(to right,rgba(247, 19, 19, 0.692),rgb(247, 153, 115));
+    color: ivory;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid rgb(109, 95, 95);
+}
+#bar>span:hover{
+    background-image: linear-gradient(to right,rgb(80, 127, 255),rgb(11, 15, 245));
+}
+.hotels>div,.places>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.hotels,.places{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.hotels>div>section:nth-child(2),.places>div>section:nth-child(2){
+    width: 60%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:max-content;
+}
+.hotels>div>section:nth-child(2)>h3,.places>div>section:nth-child(2)>h3{
+    margin-top:5px;
+}
+.hotels>div>section:nth-child(1),.places>div>section:nth-child(1){
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+.checked{
+    color: red;
+}
+.places section img{
+    height:200px;
+    width:250px;
+}

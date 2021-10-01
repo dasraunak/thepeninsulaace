@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    font-family: 'Uchen', serif;
+    background-color: yellow;
+    width: 100%;
+    margin: 0%;
+}
+.aboutUs{
+    box-sizing: content-box;
+    background: pink;
+    padding:5%;
+    padding-right:20%;
+    line-height: 1.6;
+}
+
+.aboutUs p{
+    font-size: 20px;;
+}
+
+.aboutFounder{
+    background: ORANGE;
+    display: flex;
+    flex-direction: column;
+    padding:5%;
+    padding-top: 2%;
+}
+img{
+    max-width: 15%; 
+}
+
+.aboutFounder h3{
+    font-size: 25px;
+}
+.aboutFounder p{
+    font-size: 20px;
+}
+.contact{
+    font-size: 20px;
+}

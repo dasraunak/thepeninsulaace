@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    font-family: 'Uchen', serif;
+    background-color: yellow;
+    width: 100%;
+    margin: 0%;
+}
+
+li>a{
+  text-decoration: none;
+  color:white;
+}
+.firstmini{
+   background: url("../Images/homeimage.jpg") no-repeat;
+   background-size: 100vw 100vh;
+   height: 100vh;
+}
+.hname{
+   width: 49vw;
+   text-align: left;
+   padding-left: 20px;
+}
+
+header {
+   display: flex;
+   height: 15vh;
+   width: 100%;
+   color: white;
+   background: url("../Images/homeimage.jpg") no-repeat;
+   background-size: 100vw 100vh;
+   /*padding: 20px;*/
+   position: sticky;
+   top: 0%;
+   justify-content: flex-end;
+   align-items: center;
+   font-size: 25px;
+}
+
+.first{
+   display: flex;
+}
+
+nav li {
+   display: inline;
+   margin: 10px;
+   padding: 4px;
+}
+
+.midtext{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    font-size: 50px;
+    font-weight: bold;
+}
+.midtextblock{
+    height: 15vh;
+    width: 98vw;
+}
+.servicebox{
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(236, 234, 234);
+}
+
+.servicebox1{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+.servicebox2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.servicelist{
+    background:white;
+    display: flex;
+    margin:0 1vw;
+    flex-direction: column;
+    width: 15vw;
+}
+
+.serviceimage{
+    background: url('../Images/service_image.jpg') no-repeat center top;
+    height: 15vh;
+    background-size: 16vh;
+}
+
+.servicefeature{
+    text-align: center;
+    height:10vh;
+    font-size: 30px;
+    font-weight: 600;
+    color: brown;
+}
+
+.servicedesc{
+    padding: 2vh;;
+    font-size: 16px;
+    text-align: center;
+}
+
+#cont2{
+    /* background-color: rgb(70, 235, 227); */
+    width: 100%;
+    padding:20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cont2_left{
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.cont2_left>h1,.cont2_left>h2,.cont2_left>p  {
+        margin-top:10px;
+    }
+
+.cont2_left>p{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.cont2_right{
+    display:flex;
+    flex-wrap: wrap;
+    width:50%;
+}
+.cont2_right>section{
+    position: relative;
+}
+.cont2_right>section>img{
+    width:200px;
+    height:200px;
+    margin:1px 2px;
+}
+.cont2_right section:hover .overlay{
+    width:200px;
+    height:200px;
+    padding: 1px;
+    background-color: black;
+    opacity: .8;
+}
+.cont2_right section .overlay{
+    height:0px;
+    width: 200px;
+    opacity: 0;
+    bottom: 0px;
+    position: absolute;
+    transition: height;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.material-icons {
+    width:30px;
+    height:28px;
+    border-radius: 50%;
+    background-color:white;
+    color: gray;
+}
+
+#browse{
+    background: orange;
+    margin-top: 10px;
+}
+#browse>section{
+    font-size: 1.2em;
+    font-family: 'Libre Baskerville', serif;
+    align-items: center;
+    font-weight:normal;
+    margin:10px;
+}
+#browse>section>input{
+    margin: 6px 0px 5px;
+    border-radius: 6px 0px;
+    height:20px;
+    width: 120px;
+    padding: 2px ;
+}
+#browse>section>a{
+    text-decoration: none;
+    height:22px;
+    width: 25px;
+    border-radius: 6px 0px;
+    padding: 3px;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: max-content;
+    margin-bottom: 5px;
+}
